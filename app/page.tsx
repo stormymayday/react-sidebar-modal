@@ -1,7 +1,14 @@
+import Sidebar from "@/components/Sidebar";
+import Modal from "@/components/Modal";
+import { AppProvider } from "@/context/AppContext";
+
 export default function Home() {
     return (
-        <div>
-            <h1>Sidebar & Modal</h1>
-        </div>
+        <main>
+            <AppProvider>
+                <Sidebar />
+                <Modal />
+            </AppProvider>
+        </main>
     );
 }
