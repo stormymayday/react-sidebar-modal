@@ -27,6 +27,8 @@ export default function Home() {
                 >
                     open modal
                 </button>
+
+                <></>
             </main>
             <Sidebar />
             <Modal />
