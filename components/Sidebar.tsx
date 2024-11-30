@@ -8,7 +8,7 @@ function Sidebar() {
     const { isSidebarOpen, setIsSidebarOpen } = useAppContext();
 
     return (
-        <aside className="sidebar">
+        <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
             <div className="sidebar-header">
                 <h4 className="logo">
                     Your <span> Logo</span>
