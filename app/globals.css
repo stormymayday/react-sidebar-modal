@@ -305,7 +305,7 @@ Modal
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.5);
     display: grid;
     place-items: center;
     /* hidden by default */
@@ -319,7 +319,7 @@ Modal
     visibility: visible;
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 2s;
+    transition-duration: 0.7s;
 }
 
 .modal-container {

@@ -9,7 +9,7 @@ function Modal() {
     return (
         <div
             className={
-                isModalOpen ? "modal-overlay show-modal" : "modal-container"
+                isModalOpen ? "modal-overlay show-modal" : "modal-overlay"
             }
         >
             <div className="modal-container">
