@@ -2,7 +2,6 @@
 
 import Sidebar from "@/components/Sidebar";
 import Modal from "@/components/Modal";
-// import { AppProvider } from "@/context/AppContext";
 import { FaBars } from "react-icons/fa";
 import { useAppContext } from "@/context/AppContext";
 
@@ -30,10 +29,8 @@ export default function Home() {
                     open modal
                 </button>
             </main>
-            {/* <AppProvider> */}
             <Sidebar />
             <Modal />
-            {/* </AppProvider> */}
         </>
     );
 }
