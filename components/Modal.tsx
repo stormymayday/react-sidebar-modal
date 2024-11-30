@@ -1,22 +1,26 @@
 "use client";
 
-// import { useContext } from "react";
 import { useAppContext } from "@/context/AppContext";
+import { FaTimes } from "react-icons/fa";
 
 function Modal() {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { isModalOpen, setIsModalOpen } = useAppContext();
 
     return (
-        <div>
-            <h1>Modal</h1>
-            {/* <p>Status: {isModalOpen ? "true" : "false"}</p>
-            <button
-                className="btn"
-                onClick={() => setIsModalOpen(!isModalOpen)}
-            >
-                toggle
-            </button> */}
+        <div
+            className={
+                isModalOpen ? "modal-overlay show-modal" : "modal-container"
+            }
+        >
+            <div className="modal-container">
+                <h3>modal content</h3>
+                <button
+                    className="close-modal-btn"
+                    onClick={() => setIsModalOpen(!isModalOpen)}
+                >
+                    <FaTimes />
+                </button>
+            </div>
         </div>
     );
 }

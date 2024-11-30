@@ -19,7 +19,6 @@ export default function Home() {
                 >
                     <FaBars />
                 </button>
-                <p>Status: {isModalOpen ? "true" : "false"}</p>
                 <button
                     onClick={() => {
                         setIsModalOpen(!isModalOpen);
