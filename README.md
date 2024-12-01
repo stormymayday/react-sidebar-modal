@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React Sidebar & Modal
 
-## Getting Started
+## 📝 Project Overview
 
-First, run the development server:
+This is a mini React JS application demonstrating the implementation of a sidebar and modal components using Next.js, TypeScript, and React Context API.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   **Animated Sidebar**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    -   Smooth sliding animation
+    -   Responsive design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Interactive Modal**
 
-## Learn More
+    -   Easy open/close functionality
+    -   Centered content display
 
-To learn more about Next.js, take a look at the following resources:
+-   **State Management**
+    -   Global state using React Context API
+    -   Centralized control of sidebar and modal states
+    -   Type-safe state management with TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Key Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Sidebar
 
-## Deploy on Vercel
+-   Slides in from the left side of the screen
+-   Contains navigation and social media links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Modal
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   Fullscreen overlay
+-   Centered content container
+-   Easy to open and close
+-   Customizable content area
+
+### Context Management
+
+-   `AppContext` provides global state
+-   Manages sidebar and modal visibility
+-   Uses TypeScript for type-safe state
+
+## 🎨 Styling Approach
+
+-   Uses CSS Variables for theming
+-   Responsive design
+-   Animations and transitions
+-   Consistent color scheme
+-   Flexbox and Grid layouts
+
+## 🔍 State Management Flow
+
+1. `AppProvider` initializes global state
+2. `useAppContext` hook allows components to:
+    - Read current sidebar/modal state
+    - Update sidebar/modal state
+3. Components like Sidebar and Modal consume the context

@@ -15,8 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Sidebar & Modal",
-    description: "React JS mini-project",
+    title: "React Sidebar & Modal",
+    description:
+        "A responsive React JS application with animated sidebar and modal functionality using Context API.",
 };
 
 export default function RootLayout({
